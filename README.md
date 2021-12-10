@@ -1,9 +1,14 @@
-Clone this repo and all subrepos
-`git clone 
+A development environment for Mediawiki and Wikibase
+* [Mediawiki 1.38](https://gerrit.wikimedia.org/r/mediawiki/core.git) included as a submodule
+* Python tools for data science and Jupyter notebooks
+
+Clone this repo and all submodules
+`git clone --recurse-submodules git@github.com:aot29/wb-math-dev.git`
 
 ## Prerequisites
+* [Docker](https://docs.docker.com/engine/install/), [docker-compose](https://docs.docker.com/compose/install/)
 * Python3
-* [https://docs.continuum.io/anaconda/install/ Anaconda] (recommended)
+* [Anaconda](https://docs.continuum.io/anaconda/install/) (recommended)
 
 Re-open the shell, or login again for changes to take effect
 
@@ -26,3 +31,9 @@ Start Jupyter notebooks (optional)
 Make sure the Conda environment is activated
 `conda activate wb-math-dev`
 
+Run the Mediawiki installation script
+`invoke mwInstall` and set the Admin password for your installation.
+Wait for everything to start
+
+Run the Mediawiki post-installation script
+`invoke mwPostInstall`

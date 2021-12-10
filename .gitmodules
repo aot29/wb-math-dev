@@ -1,0 +1,3 @@
+[submodule "mediawiki"]
+	path = mediawiki
+	url = https://gerrit.wikimedia.org/r/mediawiki/core.git
